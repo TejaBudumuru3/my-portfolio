@@ -27,7 +27,7 @@ export default function ScrollingText({ items }: { items: string[] }) {
 
   return (
     <>
-      <style jsx>{`
+      <style>{`
   .wrapper {
     overflow: hidden;
     white-space: nowrap;
@@ -45,25 +45,17 @@ export default function ScrollingText({ items }: { items: string[] }) {
     bottom: 0;
     width: 80px;
     pointer-events: none;
-    z-index: 2;
+    z-index: 0;
   }
 
   .wrapper::before {
     left: 0;
-    background: linear-gradient(
-      to right,
-      rgba(15, 15, 30, 0.7),
-      rgba(15, 15, 30, 0)
-    );
+
   }
 
   .wrapper::after {
     right: 0;
-    background: linear-gradient(
-      to left,
-      rgba(15, 15, 30, 0.7),
-      rgba(15, 15, 30, 0)
-    );
+ 
   }
 
   .track {

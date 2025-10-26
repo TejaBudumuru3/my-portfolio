@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import { Flag, Target, CheckCircle, ArrowDownCircle, Zap } from 'lucide-react';
 import Image from 'next/image';
 
 const Projects = () => {
@@ -34,7 +33,7 @@ const Projects = () => {
 
     const AnimateElement: React.FC<{ children: React.ReactNode }> = ({children}) => {
         const [ref, isInView] = useInView({
-            threshold:0.4,
+            threshold:0.3,
         })
 
         return(
@@ -103,39 +102,62 @@ const Projects = () => {
             animation: glow 5s ease-in-out infinite; 
             }`
         }</style>
-        <div className='w-full h-screen'>
+        <div className='w-full h-full'>
+            <div className='text-white place-self-center'>PROJECTS</div>
             <div ref={mainContentRef} className='min-h-full p-6 relative'>
                 <span ref={lineProgressRef} className='absolute w-[1px] left-[50%] bg-[#159f91] transition-height duration-0 ease-linear shadow-[0_0_1px_0.2px_#159f90]'></span>          
                 <div className='z-100 flex flex-col gap-24 bg-transparent'>
                     <AnimateElement>
-                    <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-8 items-center'>
-                        <div className='flex-1 rounded-lg p-6 rounded'>
+                    <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
+                        <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded'>
                             <img src={'/H_Home.png'} alt='Hirehawk Home' className='w-full rounded'/>
                         </div>
                         <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
                             <Image src={'/HireHawk.jpg'} alt='hirehawk logo' width={50} height={50} className='rounded-full shadow-[0_0_25px_15px_#159f91] animate-glow'/>
                             
                         </div>
-                        <div className='flex-1 border rounded-lg bg-white p-6'>
-                            <h1>Project1</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ullam voluptas rerum iste qui, non a animi suscipit necessitatibus ut numquam saepe pariatur debitis magni excepturi alias, enim officiis doloribus?</p>
+                        <div className='flex-4 text-white bg-[#090a15] rounded-lg p-6'>
+                            <h1 className='text-center text-2xl font-bold p-2'>HireHawk</h1>
+                            <p className='text-[#a0aec0]'>
+                                HireHawk is an AI-powered job application bot. A user uploads their resume, and the platform automatically parses it, finds the best job matches online, tailors the resume for each role, and then auto-applies to the positions. It streamlines the entire job hunt, from search to submission, all with a single click.
+                                <br/>
+                                <strong className='text-center text-lg font-bold text-white'>Technologies Used:</strong>
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>
+                                Frontend:</strong> Next.js, TypeScript, Tailwind CSS
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>Backend:</strong> Python, FastAPI
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>Database:</strong> PostgreSQL (Supabase) 
+                            </p> 
                         </div>
 
                     </div>
                     </AnimateElement>
                     
                     <AnimateElement>
-                        <div className='flex flex-col gap-6 lg:flex-row justify-center p-8 items-center'>
-                            <div className='flex-1 border rounded-lg bg-white p-6'>
+                        <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
+                            <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded'>
                                 <img src={'A_Home.png'} alt='Ainfinity home' className='w-full rounded'/>
                             </div>
                             <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
                                 <Image src={'/Ainfinity.png'} alt='ainfinity logo' width={50} height={50} className='animate-glow rounded-full shadow shadow-[0_0_25px_15px_#159f91]'/>
                             </div>
-                            <div className='flex-1 border bg-white rounded-lg p-6'>
-                                <h1>Project1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ullam voluptas rerum iste qui, non a animi suscipit necessitatibus ut numquam saepe pariatur debitis magni excepturi alias, enim officiis doloribus?</p>
-                            </div>
+                            <div className='flex-4 text-white bg-[#090a15] rounded-lg p-6'>
+                            <h1 className='text-center text-2xl font-bold p-2'>HireHawk</h1>
+                            <p className='text-[#a0aec0]'>
+                                HireHawk is an AI-powered job application bot. A user uploads their resume, and the platform automatically parses it, finds the best job matches online, tailors the resume for each role, and then auto-applies to the positions. It streamlines the entire job hunt, from search to submission, all with a single click.
+                                <br/>
+                                <strong className='text-center text-lg font-bold text-white'>Technologies Used:</strong>
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>
+                                Frontend:</strong> Next.js, TypeScript, Tailwind CSS
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>Backend:</strong> Python, FastAPI
+                                <br/>
+                                <strong className='text-center text-md font-bold text-white'>Database:</strong> PostgreSQL (Supabase) 
+                            </p> 
+                        </div>
 
                         </div>
                     </AnimateElement>
