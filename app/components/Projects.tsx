@@ -110,7 +110,13 @@ const Projects = () => {
                     <AnimateElement>
                     <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
                         <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded' onClick={()=>{window.open("https://dev-hire-znlr.vercel.app/","_blank")}}>
-                            <img src={'/H_Home.png'} alt='Hirehawk Home' className='w-full rounded'/>
+                        <Image
+                            src={'/H_Home.png'}
+                            alt='Hirehawk Home'
+                            width={1200}  
+                            height={800}
+                            className='w-full h-auto rounded' // h-auto keeps the aspect ratio
+                        />                        
                         </div>
                         <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
                             <Image src={'/HireHawk.jpg'} alt='hirehawk logo' width={50} height={50} className='rounded-full shadow-[0_0_25px_15px_#159f91] animate-glow'/>
@@ -138,7 +144,13 @@ const Projects = () => {
                     <AnimateElement>
                         <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
                             <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded' onClick={()=>{window.open("https://post-generator-iota.vercel.app/","_blank")}}>
-                                <img src={'A_Home.png'} alt='Ainfinity home' className='w-full rounded'/>
+                            <Image
+                                src={'/A_Home.png'}
+                                alt='Hirehawk Home'
+                                width={1200}  
+                                height={800}
+                                className='w-full h-auto rounded' // h-auto keeps the aspect ratio
+                            />                            
                             </div>
                             <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
                                 <Image src={'/Ainfinity.png'} alt='ainfinity logo' width={50} height={50} className='animate-glow rounded-full shadow shadow-[0_0_25px_15px_#159f91]'/>
