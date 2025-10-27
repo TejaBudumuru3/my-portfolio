@@ -24,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/logo.svg" sizes="any" />
+      <title>Srinivas Sai Saran Teja | Full-Stack & AI Developer</title>
+      <meta 
+        name="description" 
+        content="The portfolio of Srinivas Sai Saran Teja, a full-stack developer specializing in building modern web applications with AI integration." 
+      />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
