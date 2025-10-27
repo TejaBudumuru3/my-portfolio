@@ -13,7 +13,7 @@ export const NavBar = () => {
                     <h1 className="md:text-2xl lg:text-3xl text-md">Srinivas Sai Saran Teja</h1>
                 </div>
                 <div>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="#contact" rel="noopener noreferrer">
                         <button className="text-white text-sm font-bold cursor-pointer p-2 rounded-xl md:rounded-4xl bg-[#5a67d8] px-4 hover:bg-[#667eea] transition-colors duration-300 ease-in-out transform hover:scale-105">
                             Contact us
                         </button>

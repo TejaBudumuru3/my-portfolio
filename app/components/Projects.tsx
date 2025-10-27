@@ -109,7 +109,7 @@ const Projects = () => {
                 <div className='z-100 flex flex-col gap-24 bg-transparent'>
                     <AnimateElement>
                     <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
-                        <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded'>
+                        <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded' onClick={()=>{window.open("https://dev-hire-znlr.vercel.app/","_blank")}}>
                             <img src={'/H_Home.png'} alt='Hirehawk Home' className='w-full rounded'/>
                         </div>
                         <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
@@ -137,25 +137,24 @@ const Projects = () => {
                     
                     <AnimateElement>
                         <div  className='flex flex-col bg-transparent gap-6 lg:flex-row justify-center p-2 md:p-8 items-center'>
-                            <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded'>
+                            <div className='flex-4 rounded-lg bg-[#090a15] p-6 rounded' onClick={()=>{window.open("https://post-generator-iota.vercel.app/","_blank")}}>
                                 <img src={'A_Home.png'} alt='Ainfinity home' className='w-full rounded'/>
                             </div>
                             <div className='flex-1 bg-[#090a15] flex justify-center  py-8'>
                                 <Image src={'/Ainfinity.png'} alt='ainfinity logo' width={50} height={50} className='animate-glow rounded-full shadow shadow-[0_0_25px_15px_#159f91]'/>
                             </div>
                             <div className='flex-4 text-white bg-[#090a15] rounded-lg p-6'>
-                            <h1 className='text-center text-2xl font-bold p-2'>HireHawk</h1>
+                            <h1 className='text-center text-2xl font-bold p-2'>AInfinity</h1>
                             <p className='text-[#a0aec0]'>
-                                HireHawk is an AI-powered job application bot. A user uploads their resume, and the platform automatically parses it, finds the best job matches online, tailors the resume for each role, and then auto-applies to the positions. It streamlines the entire job hunt, from search to submission, all with a single click.
-                                <br/>
+                                AInfinity is an AI-driven content creation platform that automates the generation of engaging social media posts. By simply providing a topic or a keyword, the application leverages advanced AI models to produce high-quality, relevant text and can even suggest complementary images. It's designed for content creators and marketers to overcome writer's block, streamline their workflow, and maintain a consistent online presence with minimal effort.                                <br/>
                                 <strong className='text-center text-lg font-bold text-white'>Technologies Used:</strong>
                                 <br/>
                                 <strong className='text-center text-md font-bold text-white'>
-                                Frontend:</strong> Next.js, TypeScript, Tailwind CSS
+                                Frontend:</strong> React, Tailwind CSS, TypeScript
                                 <br/>
-                                <strong className='text-center text-md font-bold text-white'>Backend:</strong> Python, FastAPI
+                                <strong className='text-center text-md font-bold text-white'>Backend:</strong> Node.js, Express.js
                                 <br/>
-                                <strong className='text-center text-md font-bold text-white'>Database:</strong> PostgreSQL (Supabase) 
+                                <strong className='text-center text-md font-bold text-white'>Database:</strong> MongoDB
                             </p> 
                         </div>
 
