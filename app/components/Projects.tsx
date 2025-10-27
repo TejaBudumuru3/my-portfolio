@@ -102,8 +102,8 @@ const Projects = () => {
             animation: glow 5s ease-in-out infinite; 
             }`
         }</style>
-        <div className='w-full h-full'>
-            <div className='text-white place-self-center'>PROJECTS</div>
+        <div id='projects' className='w-full h-full'>
+            <div className='m-6 text-lg md:text-2xl text-gray-50 font-bold place-self-center'>Case Studies in AI-Powered Web Development</div>
             <div ref={mainContentRef} className='min-h-full p-6 relative'>
                 <span ref={lineProgressRef} className='absolute w-[1px] left-[50%] bg-[#159f91] transition-height duration-0 ease-linear shadow-[0_0_1px_0.2px_#159f90]'></span>          
                 <div className='z-100 flex flex-col gap-24 bg-transparent'>
@@ -116,9 +116,9 @@ const Projects = () => {
                             <Image src={'/HireHawk.jpg'} alt='hirehawk logo' width={50} height={50} className='rounded-full shadow-[0_0_25px_15px_#159f91] animate-glow'/>
                             
                         </div>
-                        <div className='flex-4 text-white bg-[#090a15] rounded-lg p-6'>
+                        <div className='flex-4 text-white bg-[#090a15] rounded-lg p-6 '>
                             <h1 className='text-center text-2xl font-bold p-2'>HireHawk</h1>
-                            <p className='text-[#a0aec0]'>
+                            <p className='text-[#a0aec0] bg-font-clip'>
                                 HireHawk is an AI-powered job application bot. A user uploads their resume, and the platform automatically parses it, finds the best job matches online, tailors the resume for each role, and then auto-applies to the positions. It streamlines the entire job hunt, from search to submission, all with a single click.
                                 <br/>
                                 <strong className='text-center text-lg font-bold text-white'>Technologies Used:</strong>

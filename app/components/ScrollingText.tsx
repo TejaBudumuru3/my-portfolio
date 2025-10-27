@@ -34,6 +34,7 @@ export default function ScrollingText({ items }: { items: string[] }) {
     background: transparent; /* ✅ transparent */
     padding: 2rem 0;
     position: relative;
+    cursor: default;
   }
 
   /* ✅ Softer fade — barely visible */
