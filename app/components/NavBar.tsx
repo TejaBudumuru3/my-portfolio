@@ -6,7 +6,7 @@ export const NavBar = () => {
 
             {/* This inner div has the background, padding, and rounded corners.
                 `flex` and `justify-between` are now on this element. */}
-            <div className="flex justify-between items-center bg-black rounded-4xl p-4 px-2 px-8">
+            <div className="flex justify-between items-center bg-black rounded-4xl p-4 px-8 md:px-10 lg:px-14">
                 
                 {/* Your content (no changes needed) */}
                 <div className="text-white font-bold flex items-center gap-3">
