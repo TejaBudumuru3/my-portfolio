@@ -2,7 +2,6 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/Hero-Section";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
-import ScrollingText from "./components/ScrollingText";
 
 export default function Home() {
   return (
