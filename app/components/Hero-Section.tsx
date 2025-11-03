@@ -74,11 +74,11 @@ export const HeroSection = () => {
                     <h3 className="text-3xl text-white font-bold font-display text-center mb-12">
                         My Skills
                     </h3>
-                    <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-6">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {skills.map((skillGroup, index) => (
                             <div
                                 key={skillGroup.category}
-                                className="glass p-6 rounded-2xl hover-lift group"
+                                className="justify-items-center p-6 rounded-2xl hover-lift group"
                                 style={{ animationDelay: `${index * 100}ms` }}
                             >
                                 <div 
@@ -89,7 +89,7 @@ export const HeroSection = () => {
                                 <h4 className="text-xl font-semibold text-white mb-4 font-display">
                                     {skillGroup.category}
                                 </h4>
-                                <ul className="space-y-2">
+                                <ul className="space-y-2 ">
                                     {skillGroup.items.map((skill) => (
                                         <li 
                                             key={skill}
