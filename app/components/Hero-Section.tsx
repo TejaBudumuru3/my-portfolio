@@ -74,11 +74,11 @@ export const HeroSection = () => {
                     <h3 className="text-3xl text-white font-bold font-display text-center mb-12">
                         My Skills
                     </h3>
-                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
                         {skills.map((skillGroup, index) => (
                             <div
                                 key={skillGroup.category}
-                                className="justify-items-center p-6 rounded-2xl hover-lift group"
+                                className="justify-items-center hover:scale-110 transition-transform cursor-default  p-6 rounded-2xl hover-lift bg-white/5 group border-white w-54"
                                 style={{ animationDelay: `${index * 100}ms` }}
                             >
                                 <div 
