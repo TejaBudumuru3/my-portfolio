@@ -36,7 +36,7 @@ export const HeroSection = () => {
                 <h3 className="text-lg md:text-2xl text-gray-200">I create smart, automated tools—from AI content generators to real-time job application bots.</h3>
                 
                 <div className="inline-flex hover:gap-2">
-                    <a href="https://drive.google.com/file/d/1qkUHTY3zimvCR9mRQ00i1g3ud_fkEtA7/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1MF1tbbZRi_SBJzAhrds52dE71b3cAv7z/view?usp=sharing" target="_blank">
                     <button className="mt-8 m-2 p-4  rounded-4xl text-white border-2 hover:border-none border-[#5a67d8] cursor-pointer hover:bg-[#667eea] transition-all duration-200 ease-in-out transform hover:scale-120 hover:font-extrabold">
                         My Resume &#8599;
                     </button>
