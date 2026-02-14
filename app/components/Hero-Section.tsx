@@ -22,7 +22,7 @@ export const HeroSection = () => {
         {
             category: 'Tools & Others',
             icon: '🛠️',
-            items: ['Git', 'MongoDB', 'PostgreSQL']
+            items: ['Kafka', 'Websockets', 'Microservices', 'Git', 'MongoDB', 'PostgreSQL']
         }
     ]
     return (
