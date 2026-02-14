@@ -1,21 +1,32 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export const NavBar = () => {
     return (
-        <div className="fixed top-2 left-8 right-8 z-999">
-
-            {/* This inner div has the background, padding, and rounded corners.
-                `flex` and `justify-between` are now on this element. */}
-            <div className="flex justify-between items-center bg-black rounded-4xl p-4 px-8 md:px-10 lg:px-14">
+        <div className="fixed top-0 left-0 right-0 z-999">
+            <div className="flex justify-between items-center bg-[#050505]/80 backdrop-blur-xl border-b border-white/6 px-6 md:px-12 lg:px-20 py-4">
                 
-                {/* Your content (no changes needed) */}
-                <div className="text-white font-bold flex items-center gap-3">
-                    <h1 className="md:text-2xl lg:text-3xl text-md"><strong className="hidden md:inline md:text-2xl lg:text-3xl text-md pr-2">Budumuru</strong>Srinivas Sai Saran Teja</h1>
-                </div>
-                <div>
-                    <a href="#contact" rel="noopener noreferrer">
-                        <button className="text-white text-sm font-bold cursor-pointer p-2 rounded-xl md:rounded-4xl bg-[#5a67d8] px-4 hover:bg-[#667eea] transition-all duration-700 ease-in-out transform hover:scale-105">
-                            Contact me
+                {/* Logo / Name */}
+                <a href="/" className="flex items-center gap-3 group">
+                    <div className="w-9 h-9 rounded-lg bg-[#7c3aed] flex items-center justify-center text-sm font-black text-white group-hover:shadow-lg group-hover:shadow-[#7c3aed]/40 transition-all duration-300">
+                        T
+                    </div>
+                    <span className="text-white font-semibold text-lg tracking-tight hidden md:inline">
+                        Srinivas Sai Saran Teja
+                    </span>
+                </a>
+
+                {/* Nav Links */}
+                <div className="flex items-center gap-8">
+                    <a href="/#projects" className="text-[#a0a0a0] hover:text-white text-sm font-medium transition-colors duration-200 hidden md:inline">
+                        Projects
+                    </a>
+                    {/* <Link href="/analytics" className="text-[#a0a0a0] hover:text-white text-sm font-medium transition-colors duration-200 hidden md:inline">
+                        Analytics
+                    </Link> */}
+                    <a href="/#contact" rel="noopener noreferrer">
+                        <button className="text-white text-sm font-semibold cursor-pointer px-5 py-2.5 rounded-lg bg-[#7c3aed] hover:bg-[#6d28d9] transition-all duration-200 hover:shadow-lg hover:shadow-[#7c3aed]/30">
+                            Contact
                         </button>
                     </a>
                 </div>

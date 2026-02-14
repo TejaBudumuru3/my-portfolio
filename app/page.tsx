@@ -6,15 +6,12 @@ import Projects from "./components/Projects";
 export default function Home() {
   return (
     <>
-      <div className="w-full min-h-screen bg-[#090a15] flex flex-col">
+      <div className="w-full min-h-screen bg-[#050505] flex flex-col">
         <NavBar />
         <HeroSection />
         <Projects/>
         <Footer/>
-
-
       </div>
-
     </>
   );
 }
