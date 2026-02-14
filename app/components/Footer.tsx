@@ -55,7 +55,7 @@ export const Footer = () => {
                         </SocialIcon>
                     </div>
                     <div className="flex items-center gap-6">
-                        <VisitorCounter />
+                        {/* <VisitorCounter /> */}
                         <p className="text-[#525252] text-xs tracking-wide">
                             Designed & Built by Srinivas Sai Saran Teja © {new Date().getFullYear()}
                         </p>
