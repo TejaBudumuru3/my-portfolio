@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 const projects = [
     {
-        num: '01',
-        tag: 'AI Platform',
-        title: 'AInfinity',
-        description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
-        screenshot: '/A_Home.png',
-        logo: '/Ainfinity.png',
-        liveUrl: 'https://post-generator-iota.vercel.app/',
-        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'OpenAI'],
+        num: "01",
+        tag: 'Multi Agents',
+        title: "AI Game Builder",
+        screenshot: '/Game_builder.png',
+        logo:"/Game-builder_logo.png",
+        liveUrl: "https://agentic-ai-builder-1-web-uedg.vercel.app/",
+        description: "A multi-agent AI orchestration system that autonomously plans, designs, and generates fully playable browser games from simple text prompts. Engineered with a Controller-Agent architecture, the backend routes sequential LLM reasoning (Clarifier, Planner, Coder) while persisting session state via PostgreSQL and Prisma. The system enforces strict parsing constraints to guarantee zero-dependency, executable code without build-step failures, containerized with Docker for seamless deployment.",
+        tech: ['Next.js', 'TypeScript', 'Node.js', 'Multi Agents Orchestration', 'PostgreSQL', 'Prisma', 'Docker', 'OpenRouter API']
     },
     {
         num: '02',
@@ -22,6 +22,16 @@ const projects = [
         logo: '/HireHawk.jpg',
         liveUrl: 'https://dev-hire-znlr.vercel.app/',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'Python', 'FastAPI', 'PostgreSQL', 'Supabase'],
+    },
+    {
+        num: '03',
+        tag: 'AI Platform',
+        title: 'AInfinity',
+        description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
+        screenshot: '/A_Home.png',
+        logo: '/Ainfinity.png',
+        liveUrl: 'https://post-generator-iota.vercel.app/',
+        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI'],
     },
 ]
 
@@ -182,7 +192,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                             {project.tech.map(t => (
                                 <span
                                     key={t}
-                                    className="text-xs font-medium text-[#a0a0a0] bg-white/[0.04] border border-white/8 px-3 py-1.5 rounded-lg hover:border-[#7c3aed]/40 hover:text-white transition-all duration-200"
+                                    className="text-xs cursor-default font-medium text-[#a0a0a0] bg-white/[0.04] border border-white/8 px-3 py-1.5 rounded-lg hover:border-[#7c3aed]/40 hover:text-white transition-all duration-200"
                                 >
                                     {t}
                                 </span>

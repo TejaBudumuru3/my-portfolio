@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 </svg>
             ),
             gradient: 'from-[#c4b5fd]/20 to-[#c4b5fd]/5',
-            items: ['AI Integration', 'Data Structures', 'Algorithms']
+            items: ['AI Integration', 'Agentic AI', 'Agent Orchestration', 'Data Structures', 'Algorithms']
         },
         {
             category: 'DevOps & Tools',
