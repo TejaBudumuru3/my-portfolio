@@ -158,7 +158,7 @@ export const HeroSection = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-12">
-                            <a href="https://drive.google.com/file/d/1MF1tbbZRi_SBJzAhrds52dE71b3cAv7z/view?usp=sharing" target="_blank">
+                            <a href="https://drive.google.com/file/d/1W5Dm9LfHpZnmX6sn_vOHerbNoWBUKfs4/view?usp=sharing" target="_blank">
                                 <button className="group px-7 py-3.5 rounded-xl text-white font-semibold border border-white/12 bg-transparent cursor-pointer hover:border-[#7c3aed] hover:text-[#a78bfa] transition-all duration-300 flex items-center gap-2">
                                     Resume
                                     <svg className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
