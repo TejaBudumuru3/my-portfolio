@@ -9,7 +9,7 @@ const projects = [
         title: "AI Game Builder",
         screenshot: '/Game_builder.png',
         logo:"/Game-builder_logo.png",
-        liveUrl: "https://agentic-ai-builder-1-web-uedg.vercel.app/",
+        liveUrl: "https://codeplaygames.tech/",
         description: "A multi-agent AI orchestration system that autonomously plans, designs, and generates fully playable browser games from simple text prompts. Engineered with a Controller-Agent architecture, the backend routes sequential LLM reasoning (Clarifier, Planner, Coder) while persisting session state via PostgreSQL and Prisma. The system enforces strict parsing constraints to guarantee zero-dependency, executable code without build-step failures, containerized with Docker for seamless deployment.",
         tech: ['Next.js', 'TypeScript', 'Node.js', 'Multi Agents Orchestration', 'PostgreSQL', 'Prisma', 'Docker', 'OpenRouter API']
     },
@@ -70,7 +70,6 @@ const Projects = () => {
             const windowH = window.innerHeight
             const sectionTop = rect.top
             const sectionHeight = rect.height
-
             // Progress: 0 when section enters viewport, 1 when it fully leaves
             const start = windowH      // section.top === windowH means top just entered
             const end = -sectionHeight  // section.top === -height means fully scrolled past
