@@ -14,7 +14,7 @@ export const HeroSection = () => {
             ),
             gradient: 'from-[#7c3aed]/20 to-[#7c3aed]/5',
             items: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'HTML/CSS']
-        }, 
+        },
         {
             category: 'Backend',
             icon: (
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                 </svg>
             ),
             gradient: 'from-[#7c3aed]/20 to-[#a78bfa]/5',
-            items: ['Kafka', 'Websockets', 'Microservices', 'Git', 'MongoDB', 'PostgreSQL']
+            items: ['Kafka', 'Websockets', 'Microservices', 'Git', 'Git Actions', 'Prisma ORM', 'MongoDB', 'PostgreSQL']
         }
     ]
 
@@ -59,11 +59,11 @@ export const HeroSection = () => {
         { prefix: '', keyword: '', text: '' },
         { prefix: 'developer', keyword: '.build', text: '("something amazing");' },
     ]
-    
+
     const [visibleLines, setVisibleLines] = useState(0)
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
     const heroRef = useRef<HTMLElement>(null)
-    
+
     useEffect(() => {
         const timer = setInterval(() => {
             setVisibleLines(prev => {
@@ -95,7 +95,7 @@ export const HeroSection = () => {
 
             {/* ── HERO ── */}
             <section ref={heroRef} className="relative px-6 md:px-12 lg:px-20 py-28 md:py-40 overflow-hidden min-h-[90vh] flex items-center">
-                
+
                 {/* Background effects */}
                 {/* Dot grid pattern */}
                 <div className="absolute inset-0 opacity-[0.03]" style={{
@@ -132,7 +132,7 @@ export const HeroSection = () => {
                 <div className="absolute bottom-[15%] right-[30%] w-2 h-2 border border-[#7c3aed]/25 rotate-45 animate-float-slow pointer-events-none" />
 
                 <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
-                    
+
                     {/* Left - Text Content */}
                     <div className="flex-1 max-w-2xl">
                         {/* Availability badge */}
@@ -150,15 +150,15 @@ export const HeroSection = () => {
                                 <span className="relative z-10 text-[#7c3aed]">intelligent</span>
                                 <span className="absolute bottom-2 left-0 w-full h-3 bg-[#7c3aed]/15 -skew-x-6 rounded-sm"></span>
                             </span>
-                            <br/>digital experiences.
+                            <br />digital experiences.
                         </h1>
-                        
+
                         <p className="text-[#a0a0a0] text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
                             Full-Stack Developer & AI Specialist building high-performance applications that push boundaries. From concept to deployment — I make ideas real.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-12">
-                            <a href="https://drive.google.com/file/d/1W5Dm9LfHpZnmX6sn_vOHerbNoWBUKfs4/view?usp=sharing" target="_blank">
+                            <a href="https://docs.google.com/document/d/1Qdkxm4IErIYbwBob_gFkQ-5q6QVzUatpzNnKaeWm36A/edit?usp=sharing" target="_blank">
                                 <button className="group px-7 py-3.5 rounded-xl text-white font-semibold border border-white/12 bg-transparent cursor-pointer hover:border-[#7c3aed] hover:text-[#a78bfa] transition-all duration-300 flex items-center gap-2">
                                     Resume
                                     <svg className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,7 +206,7 @@ export const HeroSection = () => {
                         >
                             {/* Glow behind terminal */}
                             <div className="absolute -inset-4 bg-[#7c3aed]/5 rounded-2xl blur-xl" />
-                            
+
                             <div className="relative rounded-2xl border border-white/8 bg-[#0a0a0a]/90 backdrop-blur-xl shadow-2xl overflow-hidden">
                                 {/* Terminal header */}
                                 <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/6 bg-[#0d0d0d]">
@@ -218,7 +218,7 @@ export const HeroSection = () => {
                                     <span className="text-[#525252] text-xs font-mono">~/developer.ts</span>
                                     <div className="w-14"></div>
                                 </div>
-                                
+
                                 {/* Terminal body */}
                                 <div className="p-6 font-mono text-[13px] leading-7 min-h-[260px]">
                                     {/* Line numbers + code */}
@@ -323,11 +323,11 @@ export const HeroSection = () => {
                             >
                                 {/* Gradient border effect */}
                                 <div className="absolute -inset-[1px] bg-linear-to-br from-[#7c3aed]/20 via-transparent to-[#a78bfa]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                
+
                                 <div className={`relative bg-[#0a0a0a] rounded-2xl p-7 h-full border border-white/[0.04] group-hover:border-transparent transition-all duration-500`}>
                                     {/* Background gradient on hover */}
                                     <div className={`absolute inset-0 bg-linear-to-br ${skillGroup.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`}></div>
-                                    
+
                                     {/* Large faded number watermark */}
                                     <div className="absolute top-4 right-6 text-[80px] font-black text-white/[0.02] leading-none select-none group-hover:text-white/[0.04] transition-colors duration-500">
                                         0{groupIndex + 1}
