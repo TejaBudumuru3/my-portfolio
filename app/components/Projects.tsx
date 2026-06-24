@@ -4,35 +4,46 @@ import Image from 'next/image'
 
 const projects = [
     {
-        num: "01",
-        tag: 'Multi Agents',
-        title: "AI Game Builder",
-        screenshot: '/Game_builder.png',
-        logo:"/Game-builder_logo.png",
-        liveUrl: "https://codeplaygames.tech/",
-        description: "A multi-agent AI orchestration system that autonomously plans, designs, and generates fully playable browser games from simple text prompts. Engineered with a Controller-Agent architecture, the backend routes sequential LLM reasoning (Clarifier, Planner, Coder) while persisting session state via PostgreSQL and Prisma. The system enforces strict parsing constraints to guarantee zero-dependency, executable code without build-step failures, containerized with Docker for seamless deployment.",
-        tech: ['Next.js', 'TypeScript', 'Node.js', 'Multi Agents Orchestration', 'PostgreSQL', 'Prisma', 'Docker', 'OpenRouter API']
-    },
-    {
-        num: '02',
+        num: '01',
         tag: 'Automation Tool',
         title: 'HireHawk',
         description: 'An intelligent job application bot that works while you sleep. Upload your resume once — HireHawk parses it, discovers matching roles, tailors your application for each position, and auto-applies around the clock.',
         screenshot: '/H_Home.png',
         logo: '/HireHawk.jpg',
         liveUrl: 'https://dev-hire-znlr.vercel.app/',
-        tech: ['Next.js', 'TypeScript', 'Tailwind', 'Python', 'FastAPI', 'PostgreSQL', 'Supabase'],
+        tech: ['Next.js', 'TypeScript', 'Tailwind', 'Python', 'FastAPI', 'PostgreSQL', 'Supabase', 'Prisma', 'Docker', 'GCP Cloud Run', 'GCP Cloud Job'],
+    },
+    {
+        num: "02",
+        tag: 'Multi Agents',
+        title: "AI Game Builder",
+        screenshot: '/Game_builder.png',
+        logo: "/Game-builder_logo.png",
+        liveUrl: "https://codeplaygames.tech/",
+        description: "A multi-agent AI orchestration system that autonomously plans, designs, and generates fully playable browser games from simple text prompts. Engineered with a Controller-Agent architecture, the backend routes sequential LLM reasoning (Clarifier, Planner, Coder) while persisting session state via PostgreSQL and Prisma. The system enforces strict parsing constraints to guarantee zero-dependency, executable code without build-step failures, containerized with Docker for seamless deployment.",
+        tech: ['Next.js', 'TypeScript', 'Node.js', 'Multi Agents Orchestration', 'PostgreSQL', 'Prisma', 'Docker', 'OpenRouter API', 'Gemini API', 'Oracle Cloud']
     },
     {
         num: '03',
+        tag: 'RAG Based Video Analytics Platform',
+        title: 'ReelMind',
+        description: 'An AI-powered video analytics platform that allows creators to analyze, compare, and interrogate social media content. ReelMind autonomously ingests videos from platforms like YouTube, Instagram, and TikTok, transcribes the audio, and uses a Retrieval-Augmented Generation (RAG) architecture to provide a conversational AI interface for deep-dive engagement analysis.',
+        screenshot: '/reelmind.png',
+        logo: '/favicon.ico',
+        liveUrl: 'https://reel-mind-gamma.vercel.app/',
+        tech: ['Next.js', 'TypeScript', 'Tailwind', 'FastAPI', 'Python', 'Prisma', 'asyncpg', 'LangChain', 'Jina Embeddings v3', 'pgvector', 'QStash', 'Docker', 'Vercel', 'PostgreSQL'],
+    },
+    {
+        num: '04',
         tag: 'AI Platform',
         title: 'AInfinity',
         description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
         screenshot: '/A_Home.png',
         logo: '/Ainfinity.png',
         liveUrl: 'https://post-generator-iota.vercel.app/',
-        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI'],
+        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
     },
+
 ]
 
 const Projects = () => {
@@ -86,7 +97,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className="w-full bg-[#050505] border-t border-white/6" ref={sectionRef}>
-            
+
             {/* Section Header */}
             <div className="px-6 md:px-12 lg:px-20 pt-28 pb-16 max-w-6xl mx-auto text-center">
                 <p className="text-[#7c3aed] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Portfolio</p>
@@ -142,7 +153,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
             <div className="lg:ml-20 group">
                 {/* Card */}
                 <div className="rounded-2xl bg-[#0a0a0a] border border-white/6 overflow-hidden hover:border-[#7c3aed]/30 transition-all duration-500 hover:shadow-[0_0_60px_-12px_rgba(124,58,237,0.15)]">
-                    
+
                     {/* Screenshot Hero */}
                     <div
                         className="relative h-[280px] md:h-[380px] lg:h-[420px] overflow-hidden cursor-pointer"
@@ -156,7 +167,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                         />
                         {/* Gradient overlay */}
                         <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
-                        
+
                         {/* Project number watermark */}
                         <span className="absolute top-6 right-8 text-[80px] md:text-[120px] font-black text-white/[0.03] leading-none select-none pointer-events-none">
                             {project.num}
@@ -180,7 +191,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                             <span className="text-[#7c3aed] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
                         </div>
                         <span className="hidden lg:inline text-[#7c3aed] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
-                        
+
                         <h3 className="text-white text-3xl md:text-4xl font-bold mt-2 mb-5">{project.title}</h3>
                         <p className="text-[#a0a0a0] text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
                             {project.description}

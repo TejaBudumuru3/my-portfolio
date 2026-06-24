@@ -16,14 +16,14 @@ export const HeroSection = () => {
             items: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'HTML/CSS']
         },
         {
-            category: 'Backend',
+            category: 'Backend & Cloud',
             icon: (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                 </svg>
             ),
             gradient: 'from-[#a78bfa]/20 to-[#a78bfa]/5',
-            items: ['Node.js', 'Express', 'Python', 'Fast API', 'Java', 'REST APIs']
+            items: ['Node.js', 'Express', 'Python', 'Fast API', 'REST APIs', 'GCP Cloud Run', 'AWS EC2', 'Oracle Cloud', 'Vercel', 'Render']
         },
         {
             category: 'AI & Algorithms',
@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 </svg>
             ),
             gradient: 'from-[#c4b5fd]/20 to-[#c4b5fd]/5',
-            items: ['AI Integration', 'Agentic AI', 'Agent Orchestration', 'Data Structures', 'Algorithms']
+            items: ['RAG Pipelines', 'AI Integration', 'Agentic AI', 'Multi Agent Orchestration', 'Data Structures', 'Algorithms', 'Groq API', 'Gemini API', 'OpenRouter API']
         },
         {
             category: 'DevOps & Tools',
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                 </svg>
             ),
             gradient: 'from-[#7c3aed]/20 to-[#a78bfa]/5',
-            items: ['Kafka', 'Websockets', 'Microservices', 'Git', 'Git Actions', 'Prisma ORM', 'MongoDB', 'PostgreSQL']
+            items: ['Kafka', 'Websockets', 'Microservices', 'Docker', 'Git', 'Git Actions', 'Prisma ORM', 'MongoDB', 'Supabase', 'PostgreSQL', 'Redis', 'Qstash']
         }
     ]
 
@@ -52,8 +52,8 @@ export const HeroSection = () => {
     const codeLines = [
         { prefix: 'const ', keyword: 'developer', text: ' = {' },
         { prefix: '  name: ', keyword: '', text: '"Srinivas Sai Saran Teja",' },
-        { prefix: '  stack: ', keyword: '', text: '["React", "Next.js", "Python"],' },
-        { prefix: '  loves: ', keyword: '', text: '"Building AI Products",' },
+        { prefix: '  stack: ', keyword: '', text: '["React", "Next.js", "Python", "Node.js"],' },
+        { prefix: '  loves: ', keyword: '', text: '"Building Scalable AI Products",' },
         { prefix: '  open_to_work: ', keyword: '', text: 'true,' },
         { prefix: '};', keyword: '', text: '' },
         { prefix: '', keyword: '', text: '' },
