@@ -16,7 +16,7 @@ const projects = [
     {
         num: "02",
         tag: 'Multi Agents',
-        title: "AI Game Builder",
+        title: "CodePlay",
         screenshot: '/Game_builder.png',
         logo: "/Game-builder_logo.png",
         liveUrl: "https://codeplaygames.tech/",
@@ -33,16 +33,16 @@ const projects = [
         liveUrl: 'https://reel-mind-gamma.vercel.app/',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'FastAPI', 'Python', 'Prisma', 'asyncpg', 'LangChain', 'Jina Embeddings v3', 'pgvector', 'QStash', 'Docker', 'Vercel', 'PostgreSQL'],
     },
-    {
-        num: '04',
-        tag: 'AI Platform',
-        title: 'AInfinity',
-        description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
-        screenshot: '/A_Home.png',
-        logo: '/Ainfinity.png',
-        liveUrl: 'https://post-generator-iota.vercel.app/',
-        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
-    },
+    // {
+    //     num: '04',
+    //     tag: 'AI Platform',
+    //     title: 'AInfinity',
+    //     description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
+    //     screenshot: '/A_Home.png',
+    //     logo: '/Ainfinity.png',
+    //     liveUrl: 'https://post-generator-iota.vercel.app/',
+    //     tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
+    // },
 
 ]
 
