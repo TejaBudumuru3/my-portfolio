@@ -33,16 +33,36 @@ const projects = [
         liveUrl: 'https://reel-mind-gamma.vercel.app/',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'FastAPI', 'Python', 'Prisma', 'asyncpg', 'LangChain', 'Jina Embeddings v3', 'pgvector', 'QStash', 'Docker', 'Vercel', 'PostgreSQL'],
     },
-    // {
-    //     num: '04',
-    //     tag: 'AI Platform',
-    //     title: 'AInfinity',
-    //     description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
-    //     screenshot: '/A_Home.png',
-    //     logo: '/Ainfinity.png',
-    //     liveUrl: 'https://post-generator-iota.vercel.app/',
-    //     tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
-    // },
+    {
+        num: '04',
+        tag: 'AI Platform',
+        title: 'AInfinity',
+        description: 'An AI-driven content engine that transforms a single keyword into polished, publish-ready social media posts. Built for creators and marketers who need quality content at scale without the creative bottleneck.',
+        screenshot: '/A_Home.png',
+        logo: '/Ainfinity.png',
+        liveUrl: 'https://post-generator-iota.vercel.app/',
+        tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
+    },
+    {
+        num: '05',
+        tag: 'Agentic AI',
+        title: 'Legixo',
+        description: 'A legal document research assistant that answers questions with grounded citations instead of hallucinated ones. Uses a LangGraph agentic pipeline that grades retrieval quality before answering, rewrites the search query on weak matches, and refuses gracefully rather than guessing when no answer exists in the corpus.',
+        screenshot: '/Legixo_Home.png',
+        logo: '/Legixo.png',
+        liveUrl: 'https://legixo-seven.vercel.app/',
+        tech: ['Python', 'FastAPI', 'LangGraph', 'Pinecone', 'Gemini API', 'Groq API', 'Vercel'],
+    },
+    {
+        num: '06',
+        tag: 'Web3 / DeFi',
+        title: 'ChadWallet',
+        description: 'A Solana memecoin trading platform built for a Founding Engineer technical assessment. Social login creates an embedded Solana wallet via Privy, live token discovery and trending banners pull real-time data from BirdEye, and the trading page renders live price charts with a buy/sell trade panel UI.',
+        screenshot: '/ChadWallet.png',
+        logo: '/ChadIcon.png',
+        liveUrl: 'https://chad-wallet-delta.vercel.app/',
+        tech: ['Next.js', 'TypeScript', 'React', 'Privy', 'Solana Web3.js', 'BirdEye API', 'Supabase', 'Lightweight Charts', 'Framer Motion', 'Vercel'],
+    }
 
 ]
 

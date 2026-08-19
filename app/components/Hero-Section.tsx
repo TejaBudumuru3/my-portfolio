@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 </svg>
             ),
             gradient: 'from-[#c4b5fd]/20 to-[#c4b5fd]/5',
-            items: ['RAG Pipelines', 'AI Integration', 'Agentic AI', 'Multi Agent Orchestration', 'Data Structures', 'Algorithms', 'Groq API', 'Gemini API', 'OpenRouter API']
+            items: ['RAG Pipelines', 'AI Integration', 'Agentic AI', 'LangChain', 'LangGraph', 'Data Structures', 'Algorithms', 'Groq API', 'Gemini API', 'NVIDIA', 'OpenRouter API']
         },
         {
             category: 'DevOps & Tools',
