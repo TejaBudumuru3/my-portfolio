@@ -59,7 +59,7 @@ const projects = [
         title: 'ChadWallet',
         description: 'A Solana memecoin trading platform built for a Founding Engineer technical assessment. Social login creates an embedded Solana wallet via Privy, live token discovery and trending banners pull real-time data from BirdEye, and the trading page renders live price charts with a buy/sell trade panel UI.',
         screenshot: '/ChadWallet.png',
-        logo: '/ChadIcon.png',
+        logo: '/chadIcon.png',
         liveUrl: 'https://chad-wallet-delta.vercel.app/',
         tech: ['Next.js', 'TypeScript', 'React', 'Privy', 'Solana Web3.js', 'BirdEye API', 'Supabase', 'Lightweight Charts', 'Framer Motion', 'Vercel'],
     }
