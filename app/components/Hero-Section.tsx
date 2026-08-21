@@ -91,10 +91,10 @@ export const HeroSection = () => {
     }, [])
 
     return (
-        <div className="min-h-screen w-full bg-[#050505] pt-20">
+        <div className="min-h-screen w-full bg-[#050505] pt-2">
 
             {/* ── HERO ── */}
-            <section ref={heroRef} className="relative px-10 md:px-12 lg:px-20 pb-28 pt-2 md:py-40 overflow-hidden min-h-[90vh] flex items-center">
+            <section ref={heroRef} className="relative px-6 md:px-12 lg:px-15 xl:px-40 pb-28 pt-2 md:pb-40 pt-25 overflow-hidden min-h-[90vh] flex items-center">
 
                 {/* Background effects */}
                 {/* Dot grid pattern */}
@@ -198,7 +198,7 @@ export const HeroSection = () => {
                     {/* Right - Interactive Terminal + Floating Elements */}
                     <div className="flex-1 max-w-lg w-full hidden lg:block">
                         <div
-                            className="relative"
+                            className="relative -top-15"
                             style={{
                                 transform: `perspective(1000px) rotateY(${mousePos.x * -3}deg) rotateX(${mousePos.y * 3}deg)`,
                                 transition: 'transform 0.3s ease-out',
@@ -207,7 +207,7 @@ export const HeroSection = () => {
                             {/* Glow behind terminal */}
                             <div className="absolute -inset-4 bg-[#7c3aed]/5 rounded-2xl blur-xl" />
 
-                            <div className="relative rounded-2xl border border-white/8 bg-[#0a0a0a]/90 backdrop-blur-xl shadow-2xl overflow-hidden">
+                            <div className="relative rounded-2xl h-xl border border-white/8 bg-[#0a0a0a]/90 backdrop-blur-xl shadow-2xl overflow-hidden">
                                 {/* Terminal header */}
                                 <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/6 bg-[#0d0d0d]">
                                     <div className="flex items-center gap-2">
