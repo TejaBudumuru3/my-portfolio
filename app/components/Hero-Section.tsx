@@ -94,7 +94,7 @@ export const HeroSection = () => {
         <div className="min-h-screen w-full bg-[#050505] pt-20">
 
             {/* ── HERO ── */}
-            <section ref={heroRef} className="relative px-6 md:px-12 lg:px-20 pb-28 pt-2 md:py-40 overflow-hidden min-h-[90vh] flex items-center">
+            <section ref={heroRef} className="relative px-10 md:px-12 lg:px-20 pb-28 pt-2 md:py-40 overflow-hidden min-h-[90vh] flex items-center">
 
                 {/* Background effects */}
                 {/* Dot grid pattern */}
