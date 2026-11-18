@@ -26,7 +26,7 @@ const AnalyticsPage = () => {
             {/* Content */}
             <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 py-16">
                 <div className="mb-14">
-                    <p className="text-[#7c3aed] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Powered by Vercel</p>
+                    <p className="text-[var(--accent)] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Powered by Vercel</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-3">Visitor Analytics.</h2>
                     <p className="text-[#a0a0a0] text-base max-w-xl">This portfolio uses Vercel Analytics for real-time, privacy-friendly visitor tracking with zero performance impact.</p>
                 </div>
@@ -83,27 +83,7 @@ const AnalyticsPage = () => {
                 </div>
 
                 {/* CTA to Vercel dashboard */}
-                <div className="bg-[#0a0a0a] border border-[#7c3aed]/20 rounded-2xl p-8 md:p-10 text-center">
-                    {/* <div className="w-12 h-12 rounded-xl bg-[#7c3aed]/10 flex items-center justify-center mx-auto mb-5">
-                        <svg className="w-6 h-6 text-[#7c3aed]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                    </div>
-                    <h3 className="text-white font-semibold text-lg mb-2">View Full Dashboard</h3>
-                    <p className="text-[#a0a0a0] text-sm mb-6 max-w-md mx-auto">
-                        The detailed analytics dashboard with charts, trends, and insights is available on the Vercel platform.
-                    </p> */}
-                    {/* <a
-                        href="https://vercel.com/dashboard"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#7c3aed] text-white font-semibold text-sm hover:bg-[#6d28d9] transition-all duration-200 hover:shadow-[0_8px_30px_-4px_rgba(124,58,237,0.4)]"
-                    >
-                        Open Vercel Dashboard
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                    </a> */}
+                <div className="bg-[#0a0a0a] border border-[var(--accent)]/20 rounded-2xl p-8 md:p-10 text-center">
                     <Analytics />
                 </div>
             </div>
@@ -112,8 +92,8 @@ const AnalyticsPage = () => {
 }
 
 const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
-    <div className="bg-[#0a0a0a] border border-white/6 rounded-2xl p-6 hover:border-[#7c3aed]/30 transition-all duration-300 group hover:shadow-[0_0_40px_-12px_rgba(124,58,237,0.12)]">
-        <div className="w-10 h-10 rounded-lg bg-[#7c3aed]/10 flex items-center justify-center text-[#7c3aed] mb-4 group-hover:bg-[#7c3aed]/15 transition-colors">
+    <div className="bg-[#0a0a0a] border border-white/6 rounded-2xl p-6 hover:border-[var(--accent)]/30 transition-all duration-300 group hover:shadow-[0_0_40px_-12px_var(--accent-glow)]">
+        <div className="w-10 h-10 rounded-lg bg-[var(--accent)]/10 flex items-center justify-center text-[var(--accent)] mb-4 group-hover:bg-[var(--accent)]/15 transition-colors">
             {icon}
         </div>
         <h4 className="text-white font-semibold mb-2">{title}</h4>
@@ -123,7 +103,7 @@ const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; titl
 
 const Step = ({ num, text }: { num: string; text: string }) => (
     <div className="flex gap-4 items-start">
-        <span className="text-[#7c3aed] font-mono text-sm font-bold mt-0.5 shrink-0">{num}</span>
+        <span className="text-[var(--accent)] font-mono text-sm font-bold mt-0.5 shrink-0">{num}</span>
         <p className="text-[#a0a0a0] text-sm leading-relaxed">{text}</p>
     </div>
 )

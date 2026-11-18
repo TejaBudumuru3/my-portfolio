@@ -8,7 +8,7 @@ const SocialIcon = ({ children, href, label }: { children: React.ReactNode; href
         target="_blank"
         rel="noopener noreferrer"
         aria-label={label}
-        className="w-11 h-11 rounded-lg bg-[#0d0d0d] border border-white/6 flex items-center justify-center text-[#a0a0a0] hover:text-white hover:border-[#7c3aed]/40 hover:bg-[#7c3aed]/10 transition-all duration-200"
+        className="w-11 h-11 rounded-lg bg-[#0d0d0d] border border-white/6 flex items-center justify-center text-[#a0a0a0] hover:text-white hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/10 transition-all duration-200"
     >
         {children}
     </a>
@@ -22,7 +22,7 @@ export const Footer = () => {
                 <div className="grid md:grid-cols-2 gap-16 items-start mb-20">
                     {/* Left */}
                     <div>
-                        <p className="text-[#7c3aed] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Contact</p>
+                        <p className="text-[var(--accent)] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Contact</p>
                         <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">
                             Let's build something remarkable.
                         </h2>
@@ -32,7 +32,7 @@ export const Footer = () => {
                         <p className="text-[#a0a0a0] text-base leading-relaxed mb-8">
                             I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great. Whether you have a question or just want to say hello—drop me a line.
                         </p>
-                        <a href="mailto:tejabudumuru3@gmail.com" className="inline-block px-6 py-3 rounded-lg bg-[#7c3aed] text-white font-semibold text-sm hover:bg-[#6d28d9] transition-all duration-200 hover:shadow-lg hover:shadow-[#7c3aed]/30">
+                        <a href="mailto:tejabudumuru3@gmail.com" className="inline-block px-6 py-3 rounded-lg bg-[var(--accent)] text-white font-semibold text-sm hover:opacity-90 transition-all duration-200 hover:shadow-lg hover:shadow-[var(--accent)]/30">
                             tejabudumuru3@gmail.com
                         </a>
                     </div>

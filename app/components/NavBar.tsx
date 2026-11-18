@@ -8,7 +8,7 @@ export const NavBar = () => {
                 
                 {/* Logo / Name */}
                 <a href="/" className="flex items-center gap-3 group">
-                    <div className="w-9 h-9 rounded-lg bg-[#7c3aed] flex items-center justify-center text-sm font-black text-white group-hover:shadow-lg group-hover:shadow-[#7c3aed]/40 transition-all duration-300">
+                    <div className="w-9 h-9 rounded-lg bg-[var(--accent)] flex items-center justify-center text-sm font-black text-white group-hover:shadow-lg group-hover:shadow-[var(--accent)]/40 transition-all duration-300">
                         T
                     </div>
                     <span className="text-white font-semibold text-lg tracking-tight hidden md:inline">
@@ -25,7 +25,7 @@ export const NavBar = () => {
                         Analytics
                     </Link> */}
                     <a href="/#contact" rel="noopener noreferrer">
-                        <button className="text-white text-sm font-semibold cursor-pointer px-5 py-2.5 rounded-lg bg-[#7c3aed] hover:bg-[#6d28d9] transition-all duration-200 hover:shadow-lg hover:shadow-[#7c3aed]/30">
+                        <button className="text-white text-sm font-semibold cursor-pointer px-5 py-2.5 rounded-lg bg-[var(--accent)] hover:opacity-90 transition-all duration-200 hover:shadow-lg hover:shadow-[var(--accent)]/30">
                             Contact
                         </button>
                     </a>

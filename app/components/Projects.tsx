@@ -5,6 +5,16 @@ import Image from 'next/image'
 const projects = [
     {
         num: '01',
+        tag: 'Workflow Automation platform',
+        title: 'BuildFlow',
+        description: 'An open-source workflow automation platform featuring an interactive React Flow canvas for orchestrating complex multi-app pipelines. Engineered with an event-driven microservices architecture using the Transactional Outbox Pattern and Apache Kafka, ensuring guaranteed message delivery and decoupling high-throughput webhook ingestion from asynchronous worker execution. Supports multi-branch routing, dynamic variable interpolation, and live execution telemetry persisted via Prisma and PostgreSQL.',
+        screenshot: '/buildflow_thumbnail.png',
+        logo: '/buildflow_Icon.png',
+        liveUrl: 'https://build-flow-zeta.vercel.app/dashboard',
+        tech: ['Next.js 15', 'TypeScript', 'Express.js', 'Apache Kafka', 'React Flow', 'PostgreSQL', 'Prisma', 'Turborepo', 'Docker', 'Redux Toolkit', 'Tailwind CSS'],
+    },
+    {
+        num: '02',
         tag: 'Automation Tool',
         title: 'HireHawk',
         description: 'An intelligent job application bot that works while you sleep. Upload your resume once — HireHawk parses it, discovers matching roles, tailors your application for each position, and auto-applies around the clock.',
@@ -14,7 +24,7 @@ const projects = [
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'Python', 'FastAPI', 'PostgreSQL', 'Supabase', 'Prisma', 'Docker', 'GCP Cloud Run', 'GCP Cloud Job'],
     },
     {
-        num: "02",
+        num: "03",
         tag: 'Multi Agents',
         title: "CodePlay",
         screenshot: '/Game_builder.png',
@@ -24,12 +34,12 @@ const projects = [
         tech: ['Next.js', 'TypeScript', 'Node.js', 'Multi Agents Orchestration', 'PostgreSQL', 'Prisma', 'Docker', 'OpenRouter API', 'Gemini API', 'Oracle Cloud']
     },
     {
-        num: '03',
+        num: '04',
         tag: 'RAG Based Video Analytics Platform',
         title: 'ReelMind',
         description: 'An AI-powered video analytics platform that allows creators to analyze, compare, and interrogate social media content. ReelMind autonomously ingests videos from platforms like YouTube, Instagram, and TikTok, transcribes the audio, and uses a Retrieval-Augmented Generation (RAG) architecture to provide a conversational AI interface for deep-dive engagement analysis.',
         screenshot: '/reelmind.png',
-        logo: '/favicon.ico',
+        logo: '/reelmind_logo.png',
         liveUrl: 'https://reel-mind-gamma.vercel.app/',
         tech: ['Next.js', 'TypeScript', 'Tailwind', 'FastAPI', 'Python', 'Prisma', 'asyncpg', 'LangChain', 'Jina Embeddings v3', 'pgvector', 'QStash', 'Docker', 'Vercel', 'PostgreSQL'],
     },
@@ -44,7 +54,7 @@ const projects = [
     //     tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'GroqAPI, Gemini AI', 'Vercel', 'Render'],
     // },
     {
-        num: '04',
+        num: '05',
         tag: 'Agentic AI',
         title: 'Legixo',
         description: 'A legal document research assistant that answers questions with grounded citations instead of hallucinated ones. Uses a LangGraph agentic pipeline that grades retrieval quality before answering, rewrites the search query on weak matches, and refuses gracefully rather than guessing when no answer exists in the corpus.',
@@ -54,7 +64,7 @@ const projects = [
         tech: ['Python', 'FastAPI', 'LangGraph', 'Pinecone', 'Gemini API', 'Groq API', 'Vercel'],
     },
     {
-        num: '05',
+        num: '06',
         tag: 'Web3 / DeFi',
         title: 'ChadWallet',
         description: 'A Solana memecoin trading platform built for a Founding Engineer technical assessment. Social login creates an embedded Solana wallet via Privy, live token discovery and trending banners pull real-time data from BirdEye, and the trading page renders live price charts with a buy/sell trade panel UI.',
@@ -120,7 +130,7 @@ const Projects = () => {
 
             {/* Section Header */}
             <div className="px-6 md:px-12 lg:px-20 pt-28 pb-16 max-w-6xl mx-auto text-center">
-                <p className="text-[#7c3aed] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Portfolio</p>
+                <p className="text-[var(--accent)] text-sm font-semibold tracking-[0.2em] uppercase mb-4">Portfolio</p>
                 <h2 className="text-white text-4xl md:text-5xl font-bold mb-4">Selected Work.</h2>
                 <p className="text-[#a0a0a0] text-base max-w-xl mx-auto">
                     Real-world applications built with modern tech stacks, AI integration, and a focus on exceptional user experience.
@@ -134,7 +144,7 @@ const Projects = () => {
                 <div className="hidden lg:block absolute left-[48px] top-0 bottom-0 w-px bg-white/6">
                     <div
                         ref={progressRef}
-                        className="w-full bg-linear-to-b from-[#7c3aed] to-[#a78bfa] shadow-[0_0_12px_2px_rgba(124,58,237,0.4)] transition-none rounded-full"
+                        className="w-full bg-linear-to-b from-[var(--accent)] to-[var(--accent-light)] shadow-[0_0_12px_2px_var(--accent-glow)] transition-none rounded-full"
                         style={{ height: `${scrollProgress * 100}%` }}
                     />
                 </div>
@@ -165,14 +175,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
         >
             {/* Timeline node (desktop only) */}
             <div className="hidden lg:flex absolute left-[28px] items-center z-10" style={{ marginTop: '2rem' }}>
-                <div className="w-10 h-10 rounded-full bg-[#0d0d0d] border-2 border-[#7c3aed] flex items-center justify-center shadow-[0_0_20px_4px_rgba(124,58,237,0.25)]">
+                <div className="w-10 h-10 rounded-full bg-[#0d0d0d] border-2 border-[var(--accent)] flex items-center justify-center shadow-[0_0_20px_4px_var(--accent-glow)]">
                     <Image src={project.logo} alt={`${project.title} logo`} width={28} height={28} className="rounded-full" />
                 </div>
             </div>
 
             <div className="lg:ml-20 group">
                 {/* Card */}
-                <div className="rounded-2xl bg-[#0a0a0a] border border-white/6 overflow-hidden hover:border-[#7c3aed]/30 transition-all duration-500 hover:shadow-[0_0_60px_-12px_rgba(124,58,237,0.15)]">
+                <div className="rounded-2xl bg-[#0a0a0a] border border-white/6 overflow-hidden hover:border-[var(--accent)]/30 transition-all duration-500 hover:shadow-[0_0_60px_-12px_var(--accent-glow)]">
 
                     {/* Screenshot Hero */}
                     <div
@@ -188,11 +198,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                         {/* Gradient overlay */}
                         <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
 
-                        {/* Project number watermark */}
-                        <span className="absolute top-6 right-8 text-[80px] md:text-[120px] font-black text-white/[0.03] leading-none select-none pointer-events-none">
-                            {project.num}
-                        </span>
-
                         {/* Live badge */}
                         <div className="absolute top-5 left-6 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10">
                             <span className="relative flex h-2 w-2">
@@ -201,16 +206,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                             </span>
                             <span className="text-white/80 text-xs font-medium">Live</span>
                         </div>
+
+                        {/* Strategy 2: Symmetrical Frosted Glass Index Pill (Guaranteed contrast on white/dark screens) */}
+                        <div className="absolute top-5 right-6 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 select-none">
+                            <span className="text-white/40 text-xs font-mono">#</span>
+                            <span className="text-white/90 text-xs font-mono font-semibold tracking-wider">{project.num}</span>
+                        </div>
                     </div>
 
                     {/* Content */}
                     <div className="p-8 md:p-10 -mt-12 relative z-10">
+                        {/* Strategy 1: Large Watermark moved to static dark card body (Never collides with screenshot) */}
+                        <span className="absolute top-6 right-8 text-[80px] md:text-[110px] font-black text-white/[0.03] leading-none select-none pointer-events-none -z-10">
+                            {project.num}
+                        </span>
+
                         {/* Mobile logo */}
                         <div className="lg:hidden flex items-center gap-3 mb-4">
                             <Image src={project.logo} alt={`${project.title} logo`} width={32} height={32} className="rounded-full" />
-                            <span className="text-[#7c3aed] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
+                            <span className="text-[var(--accent)] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
                         </div>
-                        <span className="hidden lg:inline text-[#7c3aed] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
+                        <span className="hidden lg:inline text-[var(--accent)] text-xs font-semibold tracking-[0.15em] uppercase">{project.tag}</span>
 
                         <h3 className="text-white text-3xl md:text-4xl font-bold mt-2 mb-5">{project.title}</h3>
                         <p className="text-[#a0a0a0] text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
@@ -222,7 +238,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                             {project.tech.map(t => (
                                 <span
                                     key={t}
-                                    className="text-xs cursor-default font-medium text-[#a0a0a0] bg-white/[0.04] border border-white/8 px-3 py-1.5 rounded-lg hover:border-[#7c3aed]/40 hover:text-white transition-all duration-200"
+                                    className="text-xs cursor-default font-medium text-[#a0a0a0] bg-white/[0.04] border border-white/8 px-3 py-1.5 rounded-lg hover:border-[var(--accent)]/40 hover:text-white transition-all duration-200"
                                 >
                                     {t}
                                 </span>
@@ -233,7 +249,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, useReveal }) 
                         <a
                             href={project.liveUrl}
                             target="_blank"
-                            className="inline-flex items-center gap-2 text-[#a78bfa] text-sm font-semibold hover:text-white transition-colors duration-200 group/link"
+                            className="inline-flex items-center gap-2 text-[var(--accent-light)] text-sm font-semibold hover:text-white transition-colors duration-200 group/link"
                         >
                             View Project
                             <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
